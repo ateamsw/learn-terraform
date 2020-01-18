@@ -22,4 +22,4 @@ A hands-on approach to learning Terraform as a way to create Azure resources.
 
 ## Follow Up
 
-Email: chwieder@microsoft.com
+Email chwieder@microsoft.com for more information on this workshop.
