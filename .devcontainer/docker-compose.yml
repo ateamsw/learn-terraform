@@ -1,0 +1,19 @@
+version: '3'
+services:
+  terraform-workshop:
+    image: terraform-workshop:latest
+    container_name: terraform-workshop
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+      
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ..:/workspace
+    - /c/users/chwieder/.azure:/root/.azure
+    - /c/users/chwieder/.git:/root/.config/git
+    - /c/users/chwieder/.kube:/root/.kube
+    
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity 
