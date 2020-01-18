@@ -68,8 +68,8 @@ terraform init
 
 # Apply the script with the specified variable values
 terraform apply \
--var 'resource_group_name=cdw-tfstate-20200111' \
--var 'storage_account_name=tfstate20200117xyz' \
+-var 'resource_group_name=cdw-tfstate-20200121' \
+-var 'storage_account_name=tfstate20200121xyz' \
 -var 'blob_container_name=tfstatefiles' \
 -var 'location=westus2'
 

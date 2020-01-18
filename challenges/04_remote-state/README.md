@@ -43,7 +43,7 @@ Make these adjustments to your .tf files.
 
   ```terraform
 
-  storage_account_name = "tfstate20200117xyz"
+  storage_account_name = "tfstate20200121xyz"
   container_name       = "tfstatefiles"
   key                  = "task4.tfstate"
   access_key           = "YOUR_STORAGE_KEY_GOES_HERE"
@@ -77,7 +77,7 @@ Use the Azure portal to confirm that there is now a file called task4.tfstate in
 ## Solution
 
 [main.tf file](solution/main.tf)  
-[backend-secrets.tfvars file](solution/backend-secrets.tfvars)  
+[backend-secrets.tfvars file](solution/sample-backend-secrets.tfvars)  
 
 <details>
 <summary>

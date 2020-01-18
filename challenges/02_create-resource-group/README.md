@@ -154,14 +154,26 @@ Practice using the Terraform `apply` command.
 
 ### Task 5 - Terraform Destroy
 
-Destroy the resources using the out.tfplan file.
+* Destroy the resources without a plan file.
 
-```bash
+  ```bash
 
-# Delete the resources
-terraform destroy out.tfplan
+  # Delete the resources
+  terraform destroy
 
-```
+  ```
+
+* Destroy the resources using a plan file.
+
+  ```bash
+
+  # Create the plan file
+  terraform plan --destroy -out destroy.tfplan
+
+  # Delete the resources by applying the plan
+  terraform apply destroy.tfplan
+
+  ```
 
 ## Solution
 
