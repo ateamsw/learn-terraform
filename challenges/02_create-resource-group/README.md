@@ -10,9 +10,11 @@ These are some of the fundamentals of Terraform that we need to understand.
 * [Structure](https://www.terraform.io/docs/configuration/override.html)
 * [Providers](https://www.terraform.io/docs/providers/azurerm/index.html)
 * [Variables](https://www.terraform.io/docs/configuration/variables.html)
+* [Resources](https://www.terraform.io/docs/configuration/resources.html)
 * [State Files](https://www.terraform.io/docs/state/index.html)
 
 Terraform Commands
+
   * [`fmt`](https://www.terraform.io/docs/commands/fmt.html)
   * [`validate`](https://www.terraform.io/docs/commands/validate.html)
   * [`init`](https://www.terraform.io/docs/commands/init.html)
@@ -39,7 +41,7 @@ terraform init
 
 Learn about the different ways to use and set variable values for your script.
 
-* Know how to setup the script to use default values for the variables.
+* Know how to setup the script to use default values for the variables
 
    ```hcl
 
@@ -67,6 +69,25 @@ Learn about the different ways to use and set variable values for your script.
 
    # No values supplied => will prompt for values
    terraform apply -var 'resource_group_name=my-resource-group'
+
+   ```
+
+* Know how to use a .tfvars file
+
+   ```hcl
+
+   # terraform.tfvars
+   resource_group_name = "my-resource-group"
+
+   ```
+
+   ```bash
+
+   # Automatically finds terraform.tfvars and *.auto.tfvars files
+   terraform apply
+   
+   # Or, specify a different filename
+   terraform apply -var-file=somefile.tfvars
 
    ```
 
@@ -140,4 +161,4 @@ Learn about the different ways to use and set variable values for your script.
 
 ## Solution
 
-[Sample file](solution/main.tf)
+[Sample main.tf file](solution/main.tf)

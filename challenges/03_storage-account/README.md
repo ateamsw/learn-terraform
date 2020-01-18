@@ -34,8 +34,8 @@ storage account often (or ever), so this seems like a good trade-off.
   * Azure [storage account](https://www.terraform.io/docs/providers/azurerm/r/storage_account.html)
   * [Blob container](https://www.terraform.io/docs/providers/azurerm/r/storage_container.html)
 
-  > NOTE: The storage account name must be globally unique, so include your initials or some other unique value
-  > to ensure uniqueness (e.g. tfstatecdw20200117). The storage account and blob container names must be
+  > NOTE: The storage account name must be globally unique, so include your initials or some other random value
+  > to ensure uniqueness (e.g. tfstate20200117xyz). The storage account and blob container names must be
   > alpha-numeric and all lowercase.
 
 * Include output variables that contain:
@@ -54,7 +54,7 @@ storage account often (or ever), so this seems like a good trade-off.
 
 ## Solution
 
-[Sample Terraform file](solution/main.tf)
+[Sample main.tf file](solution/main.tf)
 
 <details>
 <summary>
@@ -69,10 +69,9 @@ terraform init
 # Apply with script with the specified variable values
 terraform apply \
 -var 'resource_group_name=cdw-tfstate-20200111' \
--var 'storage_account_name=cdwtfstatestorage' \
--var 'blob_container_name=modernclouddev' \
+-var 'storage_account_name=tfstate20200117xyz' \
+-var 'blob_container_name=tfstatefiles' \
 -var 'location=westus2'
 
 ```
 </details>
-
