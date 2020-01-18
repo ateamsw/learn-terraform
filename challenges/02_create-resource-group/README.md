@@ -85,7 +85,7 @@ Learn about the different ways to use and set variable values for your script.
 
    # Automatically finds terraform.tfvars and *.auto.tfvars files
    terraform apply
-   
+
    # Or, specify a different filename
    terraform apply -var-file=somefile.tfvars
 
@@ -100,6 +100,8 @@ Learn about the different ways to use and set variable values for your script.
    ```
 
 ### Task 3 - Terraform Plan
+
+Practice using the Terraform `plan` command.
 
 * View the plan
 
@@ -121,11 +123,13 @@ Learn about the different ways to use and set variable values for your script.
 
 ### Task 4 - Terraform Apply
 
+Practice using the Terraform `apply` command.
+
 * Apply the out.tfplan file
 
   ```bash
 
-  # Do a dry-run and view output
+  # Apply the script with a plan
   terraform apply out.tfplan
 
   ```
@@ -134,7 +138,7 @@ Learn about the different ways to use and set variable values for your script.
 
   ```bash
 
-  # Do a dry-run and view output
+  # Apply the script without a plan
   terraform apply
 
   ```
@@ -150,14 +154,14 @@ Learn about the different ways to use and set variable values for your script.
 
 ### Task 5 - Terraform Destroy
 
-* Destroy the resources using the out.tfplan file
+Destroy the resources using the out.tfplan file.
 
-  ```bash
+```bash
 
-  # Do a dry-run and view output
-  terraform destroy out.tfplan
+# Delete the resources
+terraform destroy out.tfplan
 
-  ```
+```
 
 ## Solution
 

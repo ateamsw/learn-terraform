@@ -39,6 +39,8 @@ Make these adjustments to your .tf files.
 
 * Create a backend-secrets.tfvars file
 
+  > NOTE: These values should come from the output variables you setup in Challenge 3
+
   ```terraform
 
   storage_account_name = "tfstate20200117xyz"
@@ -47,8 +49,6 @@ Make these adjustments to your .tf files.
   access_key           = "YOUR_STORAGE_KEY_GOES_HERE"
 
   ```
-
-  > NOTE: These values should come from the output variables you setup in Challenge 3
 
 ### Task 2 - Terraform Init
 
@@ -89,7 +89,7 @@ Execution script
 # Use remote storage
 terraform init --backend-config backend-secrets.tfvars
 
-# Apply with script
+# Apply the script
 terraform apply -var 'resource_group_name=my-resource-group'
 
 ```
