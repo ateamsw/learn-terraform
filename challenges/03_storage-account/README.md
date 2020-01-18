@@ -30,10 +30,10 @@ storage account often (or ever), so this seems like a good trade-off.
 
 * Create a Terraform file that will create:
 
-  * Resource Group
-  * Azure [storage account](https://www.terraform.io/docs/providers/azurerm/r/storage_account.html)
-  * [Blob container](https://www.terraform.io/docs/providers/azurerm/r/storage_container.html)
-
+  * Resource Group  
+  * Azure [storage account](https://www.terraform.io/docs/providers/azurerm/r/storage_account.html)  
+  * [Blob container](https://www.terraform.io/docs/providers/azurerm/r/storage_container.html)  
+  
   > NOTE: The storage account name must be globally unique, so include your initials or some other random value
   > to ensure uniqueness (e.g. tfstate20200117xyz). The storage account and blob container names must be
   > alpha-numeric and all lowercase.

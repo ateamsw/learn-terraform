@@ -12,10 +12,10 @@ is a good candidate to use.
 ## Exercises
 
 * Create a Terraform file that will create:
-
-  * [Resource Group](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
-  * [Azure Container Instance](https://www.terraform.io/docs/providers/azurerm/r/container_group.html)
-
+  
+  * [Resource Group](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)  
+  * [Azure Container Instance](https://www.terraform.io/docs/providers/azurerm/r/container_group.html)  
+  
   > NOTE: The container's DNS name must be globally unique, so include your initials 
   > or some other random value to ensure uniqueness (e.g. xyz-container-20200121).
 
