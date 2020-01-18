@@ -51,12 +51,11 @@ resource "azurerm_kubernetes_cluster" "aks" {
   dns_prefix          = local.base_name
   kubernetes_version  = var.aks_version
 
-  agent_pool_profile {
-    name    = "linux01"
-    count   = var.node_count
-    vm_size = "Standard_DS2_v2"
-    os_type = "Linux"
-    type    = "VirtualMachineScaleSets"
+  default_node_pool {
+    name       = "linux01"
+    node_count = var.node_count
+    vm_size    = "Standard_DS2_v2"
+    type       = "VirtualMachineScaleSets"
   }
 
   service_principal {
