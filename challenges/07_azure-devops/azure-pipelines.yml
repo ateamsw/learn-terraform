@@ -14,7 +14,7 @@ steps:
   displayName: Terraform
   inputs:
     azureSubscription: $(service_connection_name)
-    scriptType: ps
+    scriptType: bash
     scriptLocation: inlineScript
     workingDirectory: ./challenges/02_create-resource-group
     inlineScript: |
