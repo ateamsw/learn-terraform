@@ -18,6 +18,8 @@ steps:
     scriptLocation: inlineScript
     workingDirectory: ./challenges/02_create-resource-group
     inlineScript: |
+      pwd
+
       terraform init \
         -backend-config="storage_account_name=$(tfstate_storage_account_name)" \
         -backend-config="container_name=$(tfstate_container_name)" \
