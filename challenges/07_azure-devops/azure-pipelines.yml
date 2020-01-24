@@ -16,6 +16,7 @@ steps:
     azureSubscription: $(service_connection_name)
     scriptType: bash
     scriptLocation: inlineScript
+    addSpnToEnvironment: true
     workingDirectory: ./challenges/02_create-resource-group/solution
     inlineScript: |
       export ARM_CLIENT_ID=$servicePrincipalId
