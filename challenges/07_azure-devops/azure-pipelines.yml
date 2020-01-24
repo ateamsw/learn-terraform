@@ -35,4 +35,4 @@ steps:
         -var 'resource_group_name=$(resource_group_name)' \
         -var 'location=$(location)'
       
-      terraform apply out.tfplan -auto-approve
+      terraform apply out.tfplan
