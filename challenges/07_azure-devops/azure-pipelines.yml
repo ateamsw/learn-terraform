@@ -16,7 +16,7 @@ steps:
     azureSubscription: $(service_connection_name)
     scriptType: bash
     scriptLocation: inlineScript
-    workingDirectory: ./challenges/02_create-resource-group
+    workingDirectory: ./challenges/02_create-resource-group/solution
     inlineScript: |
       pwd
 
