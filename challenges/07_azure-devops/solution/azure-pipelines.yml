@@ -23,7 +23,7 @@ steps:
       export ARM_CLIENT_SECRET=$servicePrincipalKey
       export ARM_SUBSCRIPTION_ID=$(az account show -o json | jq -r '.id')
       export ARM_TENANT_ID=$(az account show -o json | jq -r '.tenantId')
-
+      
       terraform init \
         -backend-config="storage_account_name=$(tfstate_storage_account_name)" \
         -backend-config="container_name=$(tfstate_container_name)" \
