@@ -17,7 +17,7 @@ steps:
     scriptType: bash
     scriptLocation: inlineScript
     addSpnToEnvironment: true
-    workingDirectory: ./challenges/02_create-resource-group/solution
+    workingDirectory: ./challenges/04_remote-state/solution
     inlineScript: |
       export ARM_CLIENT_ID=$servicePrincipalId
       export ARM_CLIENT_SECRET=$servicePrincipalKey
